@@ -73,14 +73,24 @@
 
 .footer__socials {
   display: flex;
+  align-items: center;
   gap: var(--spacing-tiny);
 }
 
 .social-circle {
   background-color: var(--color-surface);
   border-radius: 1.5rem;
-  width: 42px;
-  height: 42px;
+  width: var(--size-social-circle);
+  height: var(--size-social-circle);
+  transition: var(--transition);
+}
+
+.social-circle:hover,
+.social-circle:active {
+  width: calc(1.2 * var(--size-social-circle));
+  height: calc(1.2 * var(--size-social-circle));
+  margin-top: calc(-1 * (1.2 - 1) / 2 * var(--size-social-circle));
+  margin-bottom: calc(-1 * (1.2 - 1) / 2 * var(--size-social-circle));
 }
 
 .social-circle > a {
@@ -92,9 +102,17 @@
 }
 
 .social-circle svg {
-  width: 24px;
-  height: 24px;
+  width: var(--size-social-circle-icon);
+  height: var(--size-social-circle-icon);
   color: var(--color-text-secondary);
+  transition: var(--transition);
+}
+
+.social-circle:hover svg,
+.social-circle:active svg {
+  width: calc(1.2 * var(--size-social-circle-icon));
+  height: calc(1.2 * var(--size-social-circle-icon));
+  color: var(--color-text-primary);
 }
 
 .footer__content {
