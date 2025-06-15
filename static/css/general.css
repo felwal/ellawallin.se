@@ -54,6 +54,7 @@ h1 {
   margin-top: var(--spacing-p);
   font-family: var(--font-family-special);
   text-transform: uppercase;
+  font-weight: normal;
 }
 
 h2 {
