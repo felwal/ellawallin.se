@@ -2,7 +2,7 @@
 {{ $resizedZoom := partial "fn/ResizeSmart" (dict "image" .src "length" 2000) }}
 
 <img
-    class="figure__img zoomable{{ if .outline }} outlined{{ end }}"
+    class="figure__img{{ if not (eq .zoomable false) }} zoomable{{ end }}{{ if .outline }} outlined{{ end }}"
     loading="lazy"
     src="{{ $resized.RelPermalink }}"
     data-zoom-src="{{ $resizedZoom.RelPermalink }}"
