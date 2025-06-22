@@ -3,7 +3,6 @@
 
 <img
     class="figure__img{{ if not (eq .zoomable false) }} zoomable{{ end }}{{ if .outline }} outlined{{ end }}"
-    loading="lazy"
     src="{{ $resized.RelPermalink }}"
     data-zoom-src="{{ $resizedZoom.RelPermalink }}"
 
