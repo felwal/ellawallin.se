@@ -120,6 +120,7 @@ img.medium-zoom-image--opened {
 /* || SPLIT */
 
 .split {
+  height: fit-content;
   display: grid;
   grid-auto-flow: column;
   align-items: start;
