@@ -92,7 +92,7 @@
 /* || MEDIUM ZOOM */
 
 .medium-zoom-overlay {
-  background: var(--color-bg) !important;
+  background: var(--color-bg-overlay) !important;
 }
 
 img.medium-zoom-image--opened {
