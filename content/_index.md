@@ -7,7 +7,7 @@ herolarge: true
 aliases: [/home, /portfolio, /featured]
 ---
 
-{{% split widths="2" %}}
+{{% split widths="2" section=true %}}
 
 ## Illustrator & Concept Artist
 

@@ -5,7 +5,7 @@ hero:
 aliases: [aboutme, about-me, me]
 ---
 
-{{< split widths="2" >}}
+{{< split widths="2" section=true >}}
     {{< figure src="/images/about-portrait.png" >}}
     {{% div %}}
 

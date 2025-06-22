@@ -124,6 +124,11 @@ img.medium-zoom-image--opened {
   grid-auto-flow: column;
   align-items: start;
   gap: var(--spacing-column);
+  margin-top: var(--spacing-p);
+  margin-bottom: var(--spacing-p);
+}
+
+.split--section {
   margin-top: var(--spacing-section);
   margin-bottom: var(--spacing-section);
 }

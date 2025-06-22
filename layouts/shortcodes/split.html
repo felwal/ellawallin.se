@@ -20,6 +20,6 @@
     {{ $style = add "grid-template-columns: " $gridTemplateColumns }}
 {{ end }}
 
-<div class="split" style="{{ $style }}">
+<div class="split{{ if .Get "section" }}{{ " split--section" }}{{ end }}" style="{{ $style }}">
     {{ .Inner }}
 </div>
