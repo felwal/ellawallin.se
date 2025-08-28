@@ -3,6 +3,7 @@ title: About me
 hidden: true
 hero:
 aliases: [aboutme, about-me, me]
+project: true
 ---
 
 {{< split widths="2" section=true >}}

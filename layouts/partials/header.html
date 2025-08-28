@@ -2,7 +2,7 @@
     {{ $class := "" }}
 
     <!-- overlapping hero -->
-    {{ if and .Params.hero (or (ne .Kind "page") (ne .Section "sketches")) }}
+    {{ if and .Params.hero (or (ne .Kind "page") (.Params.project)) }}
         {{ $class = "inverted" }}
     {{ end }}
 

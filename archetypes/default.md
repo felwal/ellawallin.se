@@ -15,4 +15,5 @@ featured:
 aliases: []
 embed:
 hidden:
+project:
 ---

@@ -6,6 +6,7 @@ started: 2024-08-01
 completed: 2024-10-01
 modified:
 hero: images/alice-hero.png
+project: true
 ---
 
 ![](/images/alice-keyart-garden.png)

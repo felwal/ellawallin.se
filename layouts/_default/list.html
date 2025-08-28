@@ -10,26 +10,22 @@
 
             {{ .Content }}
 
-            {{ $sectionsAndPages := partial "fn/GetItemsRecursive" . }}
-            {{ $sections := index $sectionsAndPages 0 }}
-            {{ $pages := index $sectionsAndPages 1 }}
-
-            <!-- sections -->
-            {{ with $sections }}
-                {{ partial "list/stack_project" . }}
-            {{ end }}
-
-            {{ if and $sections $pages }}
-                <hr />
-            {{ end }}
+            {{ $pagesAndImages := partial "fn/GetItemsRecursive" . }}
+            {{ $pages := index $pagesAndImages 0 }}
+            {{ $images := index $pagesAndImages 1 }}
 
             <!-- pages -->
             {{ with $pages }}
-                {{ if eq $.Section "projects" }}
-                    {{ partial "list/stack_project" . }}
-                {{ else }}
-                    {{ partial "list/stack_sketch" . }}
-                {{ end }}
+                {{ partial "list/stack_project" . }}
+            {{ end }}
+
+            {{ if and $pages $images }}
+                <hr />
+            {{ end }}
+
+            <!-- images -->
+            {{ with $images }}
+                {{ partial "list/stack_sketch" . }}
             {{ end }}
 
             <!-- homepage featured -->

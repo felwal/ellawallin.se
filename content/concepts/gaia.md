@@ -6,6 +6,7 @@ started: 2024-10-01
 completed: 2025-02-01
 modified:
 hero: images/gaia-hero.png
+project: true
 ---
 
 ![](/images/gaia-keyart-city.png)
