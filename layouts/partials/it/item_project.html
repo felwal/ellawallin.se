@@ -20,7 +20,7 @@
             {{ $image := resources.Get . }}
 
             {{ with $image }}
-                {{ $resized := partial "fn/ResizeSmart" (dict "image" . "length" 1000) }}
+                {{ $resized := partial "fn/ResizeSmart" (dict "image" . "length" 1500) }}
                 <img class="item__img item--project__img" loading="lazy" src="{{ $resized.RelPermalink }}">
             {{ else }}
                 {{ errorf (add "Item: unable to find " .) }}
