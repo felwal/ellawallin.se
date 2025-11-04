@@ -1,6 +1,6 @@
 ---
 title: Concept art
-weight: 1
+weight: 2
 width: 4
 aliases: [projects]
 embed: false
