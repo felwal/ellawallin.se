@@ -41,6 +41,12 @@
   font-weight: 500;
 }
 
+@media screen and (max-width: 42rem) {
+  .nav-tab--hidable {
+    display: none;
+  }
+}
+
 .nav-logo {
   height: var(--height-logo-header);
 }
